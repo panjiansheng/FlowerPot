@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TabHost
+        android:id="@+id/friendTabHost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <RelativeLayout style="@style/TitleBarTheme" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true" >
+                </TabWidget>
+
+                <ImageButton
+                    android:id="@+id/iSayBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:onClick="onClick"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_add_friend" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:id="@+id/ftab1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <android.support.v4.widget.SwipeRefreshLayout
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/id_swipe_ly_myfriend"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+       
+
+                            <ListView
+                                android:id="@+id/myFriendList"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:cacheColorHint="#00000000"
+                                android:listSelector="#00000000"
+                                android:orientation="vertical" >
+                              
+                            </ListView>
+                             </android.support.v4.widget.SwipeRefreshLayout>
+                
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ftab2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <android.support.v4.widget.SwipeRefreshLayout
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/id_swipe_ly_aroundfriend"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <ListView
+                                android:id="@+id/aroundFriendList"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:cacheColorHint="#00000000"
+                                android:listSelector="#00000000"
+                                android:orientation="vertical" >
+                            </ListView>
+                        </android.support.v4.widget.SwipeRefreshLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</merge>

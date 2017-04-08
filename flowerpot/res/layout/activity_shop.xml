@@ -1,0 +1,216 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout style="@style/TitleBarTheme" >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/TitleWordTheme"
+                android:text="商店" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/ly_main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+<ScrollView 
+                    android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    
+    
+    >
+            <LinearLayout
+                android:id="@+id/id_swipe_ly"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="13dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/shop_main_bg"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <LinearLayout
+                        android:id="@+id/huapen"
+                        style="@style/ShopMainItemLaoutTheme"
+                        android:onClick="onClick" >
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            style="@style/ShopMainItemImgTheme"
+                            android:src="@drawable/ic_shop_pot" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            style="@style/ShopMainItemTextTheme"
+                            android:text="花盆" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/black_overlay" />
+
+                    <LinearLayout style="@style/ShopMainItemLaoutTheme"
+                         android:onClick="onClick" >
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            style="@style/ShopMainItemImgTheme"
+                            android:src="@drawable/ic_youmiao" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            style="@style/ShopMainItemTextTheme"
+                            android:text="幼苗" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/black_overlay" />
+
+                    <LinearLayout
+                        style="@style/ShopMainItemLaoutTheme"
+                        android:onClick="onClick"
+                         >
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            style="@style/ShopMainItemImgTheme"
+                            android:src="@drawable/ic_zhongzi" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            style="@style/ShopMainItemTextTheme"
+                            android:text="种子" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/black_overlay" />
+
+                    <LinearLayout style="@style/ShopMainItemLaoutTheme"
+                         android:onClick="onClick" >
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            style="@style/ShopMainItemImgTheme"
+                            android:src="@drawable/ic_huafei" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            style="@style/ShopMainItemTextTheme"
+                            android:text="化肥" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/black_overlay" />
+
+                    <LinearLayout style="@style/ShopMainItemLaoutTheme" 
+                         android:onClick="onClick">
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            style="@style/ShopMainItemImgTheme"
+                            android:src="@drawable/ic_gongju" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            style="@style/ShopMainItemTextTheme"
+                            android:text="种植工具" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shop_main_bg"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <LinearLayout style="@style/ShopMainItemLaoutTheme" 
+                         android:onClick="onClick">
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            style="@style/ShopMainItemImgTheme"
+                            android:src="@drawable/ic_jiashiqi" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            style="@style/ShopMainItemTextTheme"
+                            android:text="空气加湿器" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/black_overlay" />
+
+                    <LinearLayout style="@style/ShopMainItemLaoutTheme"
+                         android:onClick="onClick" >
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            style="@style/ShopMainItemImgTheme"
+                            android:src="@drawable/ic_jinghuaqi" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            style="@style/ShopMainItemTextTheme"
+                            android:text="空气净化器" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/black_overlay" />
+
+                    <LinearLayout style="@style/ShopMainItemLaoutTheme" 
+                         android:onClick="onClick">
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            style="@style/ShopMainItemImgTheme"
+                            android:src="@drawable/ic_jiahua" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            style="@style/ShopMainItemTextTheme"
+                            android:text="假花" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

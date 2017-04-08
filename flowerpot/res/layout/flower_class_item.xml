@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black_overlay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/class_item_ly0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.ucontrol.flowerpot.widgets.XCRoundRectImageView
+                android:id="@+id/class_item_img0"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/img_hua" />
+
+            <TextView
+                android:id="@+id/class_item_id0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/class_item_name0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="红掌" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/class_item_ly1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.ucontrol.flowerpot.widgets.XCRoundRectImageView
+                 android:id="@+id/class_item_img1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/img_hua" />
+
+            <TextView
+                android:id="@+id/class_item_id1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/class_item_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="红掌" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/class_item_ly2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.ucontrol.flowerpot.widgets.XCRoundRectImageView
+                android:id="@+id/class_item_img2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/img_hua" />
+
+            <TextView
+                android:id="@+id/class_item_id2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:visibility="gone" />
+
+            <TextView
+                 android:id="@+id/class_item_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="红掌" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/class_item_ly3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.ucontrol.flowerpot.widgets.XCRoundRectImageView
+                android:id="@+id/class_item_img3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/img_hua" />
+
+            <TextView
+                android:id="@+id/class_item_id3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:visibility="gone" />
+
+            <TextView
+               android:id="@+id/class_item_name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="红掌" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

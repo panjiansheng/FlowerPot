@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".MainActivity" >
+   <include android:id="@+id/main_layout_below" layout="@layout/main_layout_below" />
+
+    <com.ucontrol.flowerpot.widgets.LeftSliderLayout
+        android:id="@+id/main_slider_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        
+        <!-- Shadow Child 
+        <ImageView
+            android:layout_width="15px"
+            android:layout_height="fill_parent"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/main_side_shadow" />
+        -->
+        <!-- Main Child -->
+        <include android:id="@+id/main_slider_main" layout="@layout/main_layout_above" />
+        
+    </com.ucontrol.flowerpot.widgets.LeftSliderLayout>
+</RelativeLayout>
